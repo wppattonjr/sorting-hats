@@ -3,45 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
+      <p class="lead">
+        Prefect’s bathroom Trelawney veela squashy armchairs, SPEW: Gamp’s
+        Elemental Law of Transfiguration. Magic Nagini bezoar, Hippogriffs
+        Headless Hunt giant squid petrified. Beuxbatons flying half-blood
+        revision schedule, Great Hall aurors Minerva McGonagall Polyjuice
+        Potion. Restricted section the Burrow Wronski Feint gnomes, quidditch
+        robes detention, chocolate frogs. Errol parchment knickerbocker glory
+        Avada Kedavra Shell Cottage beaded bag portrait vulture-hat. Twin cores,
+        Aragog crimson gargoyles, Room of Requirement counter-clockwise
+        Shrieking Shack. Snivellus second floor bathrooms vanishing cabinet
+        Wizard Chess, are you a witch or not?
+      </p>
+      <hr class="my-4" />
+      <p>
+        Half-giant jinxes peg-leg gillywater broken glasses large black dog
+        Great Hall.
+      </p>
+      <a class="btn btn-primary btn-lg" id="introBtn" href="#" role="button"
+        >Let's start sorting!</a>
+    </div>
 
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
-        <p class="lead">Prefect’s bathroom Trelawney veela squashy armchairs, SPEW: Gamp’s Elemental Law of Transfiguration. Magic Nagini bezoar, Hippogriffs Headless Hunt giant squid petrified. Beuxbatons flying half-blood revision schedule, Great Hall aurors Minerva McGonagall Polyjuice Potion. Restricted section the Burrow Wronski Feint gnomes, quidditch robes detention, chocolate frogs. Errol parchment knickerbocker glory Avada Kedavra Shell Cottage beaded bag portrait vulture-hat. Twin cores, Aragog crimson gargoyles, Room of Requirement counter-clockwise Shrieking Shack. Snivellus second floor bathrooms vanishing cabinet Wizard Chess, are you a witch or not?</p>
-        <hr class="my-4">
-        <p>Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall.</p>
-        <a class="btn btn-primary btn-lg" id="introBtn" href="#" role="button">Let's start sorting!</a>
-      </div>
-
-      <form id="sortingForm" class="form-inline">
-        <div class="form-group mb-2">
-          <h3>Enter First Year's Name</h3>
+    <form id="sortingForm" >
+      <div class="card m-3 justify-content-center"></div>
+        <div class="card-body text-center">
+          <h2>Enter First Year's Name</h2>
+          <div class="d-flex col-md-6 offset-md-3">
+            <label for="inputName">Student:</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Harry Potter">
+            <button type="reset" id="sort" class="btn btn-primary mb-2">Sort!</button>
+          </div>
         </div>
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputName" class="sr-only">Name</label>
-          <input type="text" class="form-control" id="inputName" placeholder="Name">
-        </div>
-        <button type="reset"  id="sort" class="btn btn-primary mb-2">Sort!</button>
-      </form>
-      <div id="all-cards" class="d-flex flex-wrap justify-content-around"></div>
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        
-    
+      </div>  
+    </form>
 
-    
-      
+    <div id="all-cards" class="d-flex flex-wrap justify-content-center"></div>
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>
