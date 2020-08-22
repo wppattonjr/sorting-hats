@@ -2,6 +2,8 @@
 
 ![Sorting Hats - Animated GIF](https://user-images.githubusercontent.com/63669713/90947433-840d9300-e3fb-11ea-8853-6b92703d6c76.gif)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0dbcb32f-34cc-44a7-b635-9851d2c0f30b/deploy-status)](https://app.netlify.com/sites/wendellp-sortinghat/deploys)
+
 ## Introduction
 
 Sorting Hats is a single page application used for sorting students of Hogwarts into their "Hogwarts House" at random.
