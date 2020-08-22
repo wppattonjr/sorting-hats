@@ -1,5 +1,6 @@
 ## Project - The Sorting Hat
 
+![Sorting Hats - Animated GIF](https://user-images.githubusercontent.com/63669713/90947433-840d9300-e3fb-11ea-8853-6b92703d6c76.gif)
 
 ## Introduction
 
