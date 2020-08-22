@@ -50,7 +50,7 @@ const houseCardBuilder = (hogwarts) => {
                         <p class="house-name">${studentsArray[i].houseName}</p>
                         </div>
                         <button type="button" class="btn btn-danger"="${i}">Expel</button>
-                     </div>`;
+                  </div>`;
   }
 
   printToDom("all-cards", domString);
